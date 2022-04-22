@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="icon" type="icon/png" href="/img/vogale4.png">
     <title>vogal.cryptor</title>
 </head>
 
 <body>
-
+    <div id="background">
     <header>
         <div class="container">
-            <img src="/img/Vector.png" alt="Logo da Alura" id="img">
+            <img src="/img/vogale4.png" alt="Logo" id="img">
         </div>
         <h1 class="item">vogal.encryptor</h1>            
     </header>
@@ -21,25 +22,65 @@
 
     <section class="flex-container">
         <div>
-            <textarea type="text" placeholder="Digite seu texto aqui..." class="texto"></textarea>           
-            <div>
-                <button type="submit" class="botoes">Criptografar</button>
-                <button type="submit" class="botoes">Descriptografar</button>
-            </div>
+            <form>
+                <textarea type="text" id="texto" required placeholder="Digite seu texto aqui" 
+                autofocus="true" autocomplete="off" spellcheck="false" wrap="hard"></textarea> 
+
+                <p class="aviso">apenas letras minúsculas e sem acento.</p>
+
+                <img src="/img/alerta.png" id="alerta">   
+
+                <div>
+                    
+                    <a href="#texto2">
+                        <button type="submit" id="encript" class="botoes">Criptografar
+
+                        </button></a>
+
+                    <a href="#texto2">
+                    <button type="submit" id="descript"class="botoes">Descriptografar
+                    </button></a>
+
+                </div>
+            </form>
         </div>
         
         <div>
-                 <img src="/img/encryption-unscreen.gif" id="gif">
-            <textarea type="text"readonly class="texto2"></textarea>
-               <div>
-                   <button type="button" class="copiar">Copiar</button>
-               </div>
+
+            <div class="flex">
+
+                <p class="nomsg"><strong>Nenhuma mensagem<br> encontrada</strong></p>
+                <p class="digite">Digite algo que gostaria<br> de criptografar ou descriptografar</p>
+
+            </div>
+
+            <img src="/img/encryption-unscreen1.gif" id="gif">
+            <textarea type="text" readonly id="texto2" class="border"></textarea>
+
+            <div>
+                <button type="button" id="copiar">Copiar</button>
+                <button type="button" id="limpar">Limpar</button>
+            </div>
         </div>
     </section>
 
     </main>
+    <footer id="footer">autor: Ítalo Rissardi<br> 
+        
+        <div class="links">
 
-<footer id="footer">Criado por: Ítalo Rissardi</footer>
+        <a href="https://www.linkedin.com/in/%C3%ADtalo-rissardi-83340322a/">
+            <img src="/img/linkedin.png">
+        </a>
 
+        <a href="https://github.com/itariss/">
+            <img src="/img/github.png">
+        </a>
+    </div>
+
+</footer>
+
+</div>
+<script src="/script.js"> </script>
 </body>
 </html>
