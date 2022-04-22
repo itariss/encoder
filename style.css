@@ -46,6 +46,7 @@ header {
     width: 18.6rem;
     height: 19.6rem;
     background: #E1F3EF;
+    resize: none;
     outline: none;  
     border: none;
 
