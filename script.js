@@ -1,4 +1,4 @@
-var re = new RegExp("^[a-z/s]+$");
+var re = new RegExp("[a-z/s]+$");
 
 function apareceConteudo() {
 
