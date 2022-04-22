@@ -1,14 +1,14 @@
-var re = new RegExp("^[a-z/s]+$")
+var re = new RegExp("^[a-z/s]+$");
 
 function apareceConteudo() {
 
     document.querySelector("#texto2").value = "";
-    document.querySelector("#texto").value = ""
+    document.querySelector("#texto").value = "";
     document.querySelector("#texto2").classList.remove("background");
     document.querySelector("#gif").classList.remove("z-index");
            
-    document.querySelector(".digite").classList.remove("z-index")
-    document.querySelector(".nomsg").classList.remove("z-index")
+    document.querySelector(".digite").classList.remove("z-index");
+    document.querySelector(".nomsg").classList.remove("z-index");
 
 }
 
@@ -84,7 +84,7 @@ document.querySelector("#copiar").addEventListener("click", () => {
         textoCopiado = document.querySelector("#texto2").select();
         document.execCommand("copy");
         
-        alert("A menssagem foi copiada")
+        alert("A menssagem foi copiada");
         apareceConteudo();
         document.querySelector("#texto").focus();
 
@@ -95,7 +95,7 @@ document.querySelector("#copiar").addEventListener("click", () => {
 document.querySelector("#limpar").addEventListener("click", () => {
 
     apareceConteudo();
-    document.querySelector("#texto").value = ""
+    document.querySelector("#texto").value = "";
     document.querySelector("#texto").focus();
 
 });  
