@@ -1,9 +1,8 @@
-var re = new RegExp("[a-z/s]+$");
+re = new RegExp("^[a-z/s ]+$");
 
 function apareceConteudo() {
 
     document.querySelector("#texto2").value = "";
-    document.querySelector("#texto").value = "";
     document.querySelector("#texto2").classList.remove("background");
     document.querySelector("#gif").classList.remove("z-index");
            
@@ -25,6 +24,10 @@ function apareceTexto(novoTexto) {
     
 }
 
+function invalidaMensagem() {
+    document.querySelector("#texto").setCustomValidity("Texto Inválido");
+
+}
 
 document.querySelector("#encript").addEventListener("click", () => {
    
@@ -40,8 +43,8 @@ document.querySelector("#encript").addEventListener("click", () => {
 
         apareceTexto(novoTexto); 
 
-    }else {
-
+    }else if(!texto.match(re) && texto !== "") {
+        alert("Não use letras maiúsculas ou acentos")
         apareceConteudo();
     }
 
@@ -62,7 +65,9 @@ document.querySelector("#descript").addEventListener("click", () => {
 
         apareceTexto(novoTexto);
 
-    }else {
+    }else if(!texto.match(re) && texto !== "") {
+
+        alert("Não use letras maiúsculas ou acentos")
 
         apareceConteudo();
     }
@@ -98,4 +103,4 @@ document.querySelector("#limpar").addEventListener("click", () => {
     document.querySelector("#texto").value = "";
     document.querySelector("#texto").focus();
 
-});  
+}); 

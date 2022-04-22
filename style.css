@@ -39,17 +39,16 @@ header {
     margin: 2.2rem;
 }
 
-
 #texto {
     font-size: 1rem;
     color: #4D194D;
     margin-top: 1.5rem;
     width: 18.6rem;
     height: 19.6rem;
-    resize: none;
     background: #E1F3EF;
     outline: none;  
     border: none;
+
     
 }
 
