@@ -1,202 +1,190 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-:root { 
-    width: 100%;
-    height:100%;
-    background: #E1F3EF;
+:root {
+  width: 100%;
+  height: 100%;
+  background: #e1f3ef;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 #img {
-    float: left;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    justify-content: flex-start;
-    padding-top: 2.5rem;
-    padding-left: 2.2rem;
-    flex-wrap: wrap;
-    width: 4.5rem; 
-}    
+  float: left;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  justify-content: flex-start;
+  padding-top: 2.5rem;
+  padding-left: 2.2rem;
+  flex-wrap: wrap;
+  width: 4.5rem;
+}
 
 .item {
-    font-size: 1.4rem;
-    padding: 2.5rem 5.2rem;
+  font-size: 1.4rem;
+  padding: 2.5rem 5.2rem;
 }
 
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 2.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2.2rem;
 }
 
 #texto {
-    font-size: 1rem;
-    color: #4D194D;
-    margin-top: 1.5rem;
-    width: 18.6rem;
-    height: 19.6rem;
-    background: #E1F3EF;
-    resize: none;
-    outline: none;  
-    border: none;
-
-    
+  font-size: 1rem;
+  color: #4d194d;
+  margin-top: 1.5rem;
+  width: 18.6rem;
+  height: 19.6rem;
+  background: #e1f3ef;
+  resize: none;
+  outline: none;
+  border: none;
 }
 
-
 #texto2 {
-    margin-top: 1.5rem;
-    width: 18.6rem;
-    height: 26.4rem;
-    min-width: 15rem;
-    resize: none;
-    outline: none;
-    border-radius: 0.5rem; 
-    border: 0.3rem solid #4D194D;  
+  margin-top: 1.5rem;
+  width: 18.6rem;
+  height: 26.4rem;
+  min-width: 15rem;
+  resize: none;
+  outline: none;
+  border-radius: 0.5rem;
+  border: 0.3rem solid #4d194d;
 }
 
 .background {
-    font-size: 1rem;
-    background-color: black;
-    color: #E1F3EF;
+  font-size: 1rem;
+  background-color: black;
+  color: #e1f3ef;
 }
 
-
 #alerta {
-    width: 0.7rem;
+  width: 0.7rem;
 }
 
 .aviso {
-    color: darkgrey;
-    position: relative;
-    font-size: 0.7rem;
-    left: 1.1rem;
-    top: 1rem
+  color: darkgrey;
+  position: relative;
+  font-size: 0.7rem;
+  left: 1.1rem;
+  top: 1rem;
 }
 
 #gif {
-    position:relative;
-    width: 4rem;
-    margin: -2.2rem;
-    margin-top: 1.5;
-    height: 4rem;
-    left: 9.45rem;
-    bottom: 17.5rem
+  position: relative;
+  width: 4rem;
+  margin: -2.2rem;
+  margin-top: 1.5;
+  height: 4rem;
+  left: 9.45rem;
+  bottom: 17.5rem;
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    bottom:-18rem;
-    margin: -3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: -18rem;
+  margin: -3rem;
 }
 
-
 .nomsg {
-    position: relative;
-    text-align: center;
-
+  position: relative;
+  text-align: center;
 }
 
 .digite {
-    position: relative;
-    text-align: center;
-    max-width: fit-content;
-    margin-top: 0.5rem;
-    left: 6.3rem;
-    font-size: 0.7rem;
-    color: dimgrey;
+  position: relative;
+  text-align: center;
+  max-width: fit-content;
+  margin-top: 0.5rem;
+  left: 6.3rem;
+  font-size: 0.7rem;
+  color: dimgrey;
 }
 
 .z-index {
-    z-index: -1;
+  z-index: -1;
 }
 
-
 .botoes {
-    width: 9.1rem;
-    height: 2.2rem;
-    margin: 2.5rem 0;
-    border-radius: 90px;
-
+  width: 9.1rem;
+  height: 2.2rem;
+  margin: 2.5rem 0;
+  border-radius: 90px;
 }
 
 #encript {
-    background-color: #E1F3EF;
-    border-color: #4D194D;
-    color:#4D194D
-
+  background-color: #e1f3ef;
+  border-color: #4d194d;
+  color: #4d194d;
 }
 
 #descript {
-    background-color: #006466;
-    color: #E1F3EF;
-
+  background-color: #006466;
+  color: #e1f3ef;
 }
 
 .invalido {
-    font-size: small;
-    text-align: center;
-    border: 0.12rem solid black;
-    border-radius: 90px;
-    width: fit-content;
-    padding: 0.3rem;
-    background-color: coral;
-    margin: auto;
-    opacity: 0;
-    color: white
-
+  font-size: small;
+  text-align: center;
+  border: 0.12rem solid black;
+  border-radius: 90px;
+  width: fit-content;
+  padding: 0.3rem;
+  background-color: coral;
+  margin: auto;
+  opacity: 0;
+  color: white;
 }
 
 .valido {
-    position: relative;
-    font-size: small;
-    text-align: center;
-    bottom: 1.8rem;
-    border: 0.12rem solid black;
-    border-radius: 1rem;
-    width: fit-content;
-    padding: 0.3rem;
-    background-color: royalblue;
-    margin: auto;
-    opacity: 0;
-    color: white
-
+  position: relative;
+  font-size: small;
+  text-align: center;
+  bottom: 1.8rem;
+  border: 0.12rem solid black;
+  border-radius: 1rem;
+  width: fit-content;
+  padding: 0.3rem;
+  background-color: royalblue;
+  margin: auto;
+  opacity: 0;
+  color: white;
 }
 
 #copiar {
-    width: 4.1rem;
-    height:2.2rem;
-    background-color: #4D194D;
-    color: #E1F3EF;
-    border-radius: 20px; 
+  width: 4.1rem;
+  height: 2.2rem;
+  background-color: #4d194d;
+  color: #e1f3ef;
+  border-radius: 20px;
 }
 
 #limpar {
-    width: 4.1rem;
-    height:2.2rem;
-    background-color: #006466;
-    color: #E1F3EF;
-    border-radius: 20px; 
+  width: 4.1rem;
+  height: 2.2rem;
+  background-color: #006466;
+  color: #e1f3ef;
+  border-radius: 20px;
 }
 
 #footer {
-    text-align: center;
-    font-size: 0.8rem;
-    color:dimgrey
+  text-align: center;
+  font-size: 0.8rem;
+  color: dimgrey;
 }
 
 .links {
-    margin: 1rem;
+  margin: 1rem;
 }
