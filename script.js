@@ -25,9 +25,36 @@ function apareceTexto(novoTexto) {
 }
 
 function invalidaMensagem() {
-    document.querySelector("#texto").setCustomValidity("Texto Inválido");
+    document.querySelector("#texto").setCustomValidity("Não use letras maiúsculas ou acentos");
 
 }
+
+function apagaAviso() {
+    document.querySelector("#texto").setCustomValidity("");
+
+}
+
+function apareceInvalido() {
+    document.querySelector(".invalido").style.opacity = "80%"
+
+}
+
+function apagaInvalido() {
+    document.querySelector(".invalido").style.opacity = "0%"
+
+}
+
+function apareceCopiado() {
+    document.querySelector(".valido").style.opacity = "80%"
+
+}
+
+function apagaCopiado() {
+    document.querySelector(".valido").style.opacity = "0%"
+
+}
+
+
 
 document.querySelector("#encript").addEventListener("click", () => {
    
@@ -37,15 +64,17 @@ document.querySelector("#encript").addEventListener("click", () => {
 
         let novoTexto = texto.replace(/e/g, "enter");
         novoTexto = novoTexto.replace(/i/g, "imes");
-        novoTexto = novoTexto.replace(/a/g, "alis");
+        novoTexto = novoTexto.replace(/a/g, "ai");
         novoTexto = novoTexto.replace(/o/g, "ober");
         novoTexto = novoTexto.replace(/u/g, "ufat");
 
         apareceTexto(novoTexto); 
 
-    }else if(!texto.match(re) && texto !== "") {
-        alert("Não use letras maiúsculas ou acentos")
-        apareceConteudo();
+    }else if (!texto.match(re) && texto !== "") {
+        
+        invalidaMensagem();
+        setTimeout(apagaAviso, 1200);
+
     }
 
 });
@@ -67,9 +96,9 @@ document.querySelector("#descript").addEventListener("click", () => {
 
     }else if(!texto.match(re) && texto !== "") {
 
-        alert("Não use letras maiúsculas ou acentos")
-
-        apareceConteudo();
+        invalidaMensagem();
+        setTimeout(apagaAviso, 2000)
+        
     }
 
 });
@@ -78,18 +107,19 @@ document.querySelector("#copiar").addEventListener("click", () => {
     
     textoCopiado = document.querySelector("#texto2").value;
     
-    while(textoCopiado == "") {
+    if(textoCopiado == "") {
+
+        apareceInvalido()
+        setTimeout(apagaInvalido, 1200)
         
-        window.alert("Nenhuma mensagem para ser copiada");
-        break;
     }
     
     if(textoCopiado != "") {
         
         textoCopiado = document.querySelector("#texto2").select();
         document.execCommand("copy");
-        
-        alert("A menssagem foi copiada");
+        apareceCopiado()
+        setTimeout(apagaCopiado, 1200)
         apareceConteudo();
         document.querySelector("#texto").focus();
 

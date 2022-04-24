@@ -24,7 +24,7 @@
         <div>
             <form>
                 <textarea type="text" id="texto" required placeholder="Digite seu texto aqui" 
-                autofocus="true" autocomplete="off" spellcheck="false"></textarea> 
+                autofocus="true" autocomplete="off" spellcheck="false"></textarea>
 
                 <p class="aviso">apenas letras minúsculas e sem acento.</p>
 
@@ -55,9 +55,11 @@
             </div>
 
             <img src="img/encryption-unscreen1.gif" id="gif">
-            <textarea type="text" readonly id="texto2" class="border"></textarea>
+            <textarea type="text" readonly required="text" id="texto2" class="border"></textarea>
+            <p class="invalido">Nenhuma mensagem para ser copiada!</p>
+            <p class="valido">"Sua mensagem foi copiada!"</p>
 
-            <div>
+            <div>                
                 <button type="button" id="copiar">Copiar</button>
                 <button type="button" id="limpar">Limpar</button>
             </div>

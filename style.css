@@ -71,6 +71,7 @@ header {
     color: #E1F3EF;
 }
 
+
 #alerta {
     width: 0.7rem;
 }
@@ -144,10 +145,39 @@ header {
 
 }
 
+.invalido {
+    font-size: small;
+    text-align: center;
+    border: 0.12rem solid black;
+    border-radius: 90px;
+    width: fit-content;
+    padding: 0.3rem;
+    background-color: coral;
+    margin: auto;
+    opacity: 0;
+    color: white
+
+}
+
+.valido {
+    position: relative;
+    font-size: small;
+    text-align: center;
+    bottom: 1.8rem;
+    border: 0.12rem solid black;
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 0.3rem;
+    background-color: royalblue;
+    margin: auto;
+    opacity: 0;
+    color: white
+
+}
+
 #copiar {
     width: 4.1rem;
     height:2.2rem;
-    margin: 2.5rem 0;
     background-color: #4D194D;
     color: #E1F3EF;
     border-radius: 20px; 
@@ -156,7 +186,6 @@ header {
 #limpar {
     width: 4.1rem;
     height:2.2rem;
-    margin: 2.5rem 0;
     background-color: #006466;
     color: #E1F3EF;
     border-radius: 20px; 
