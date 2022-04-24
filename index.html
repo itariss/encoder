@@ -18,7 +18,6 @@
     <main>
       <form>
         <textarea
-          type="text"
           id="texto"
           required
           placeholder="Digite seu texto aqui"
@@ -27,23 +26,19 @@
           spellcheck="false"
         ></textarea>
 
-        <p class="aviso">apenas letras minúsculas e sem acento.</p>
+        <p class="warning">
+          <img src="img/alerta.png" alt="" />
+          Apenas letras minúsculas e sem acento.
+        </p>
 
-        <img src="img/alerta.png" id="alerta" />
-
-        <div>
-          <a href="#texto2">
-            <button type="submit" id="encript" class="botoes">
-              Criptografar
-            </button></a
-          >
-
-          <a href="#texto2">
-            <button type="submit" id="descript" class="botoes">
-              Descriptografar
-            </button></a
-          >
-        </div>
+        <section>
+          <button class="button" type="submit" id="encript">
+            Criptografar
+          </button>
+          <button class="button" type="submit" id="descript">
+            Descriptografar
+          </button>
+        </section>
       </form>
 
       <div>
