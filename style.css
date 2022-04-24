@@ -11,7 +11,7 @@
   --secondary-color: #006466;
   --text-color: #4d194d;
   --logo-size: 6rem;
-  --gif-size: 4rem;
+  --gif-size: 6rem;
 }
 
 html,
@@ -33,32 +33,26 @@ header {
 }
 
 header img {
-  width: var(--logo-size);
+  width: calc(var(--logo-size) + 0.8rem);
   height: var(--logo-size);
   padding-right: 1rem;
 }
 
 header h1 {
-  width: 75%;
+  width: 65%;
   cursor: default;
 }
 
 main {
   display: flex;
-  /* flex-direction: row; */
-  flex-wrap: wrap;
   justify-content: space-around;
-  min-height: 35rem;
   padding: 2rem 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
-}
-
-form#text-encode {
-  width: 40%;
+  margin: 1rem 0;
 }
 
 textarea {
