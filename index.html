@@ -14,6 +14,69 @@
       <img src="img/vogale4.png" alt="Logo" title="vogal.encryptor" />
       <h1>vogal.encryptor</h1>
     </header>
+
+    <main>
+      <form>
+        <textarea
+          type="text"
+          id="texto"
+          required
+          placeholder="Digite seu texto aqui"
+          autofocus="true"
+          autocomplete="off"
+          spellcheck="false"
+        ></textarea>
+
+        <p class="aviso">apenas letras minúsculas e sem acento.</p>
+
+        <img src="img/alerta.png" id="alerta" />
+
+        <div>
+          <a href="#texto2">
+            <button type="submit" id="encript" class="botoes">
+              Criptografar
+            </button></a
+          >
+
+          <a href="#texto2">
+            <button type="submit" id="descript" class="botoes">
+              Descriptografar
+            </button></a
+          >
+        </div>
+      </form>
+
+      <div>
+        <div class="flex">
+          <p class="nomsg">
+            <strong
+              >Nenhuma mensagem<br />
+              encontrada</strong
+            >
+          </p>
+          <p class="digite">
+            Digite algo que gostaria<br />
+            de criptografar ou descriptografar
+          </p>
+        </div>
+
+        <img src="img/encryption-unscreen1.gif" id="gif" />
+        <textarea
+          type="text"
+          readonly
+          required="text"
+          id="texto2"
+          class="border"
+        ></textarea>
+        <p class="invalido">Nenhuma mensagem para ser copiada!</p>
+        <p class="valido">"Sua mensagem foi copiada!"</p>
+
+        <div>
+          <button type="button" id="copiar">Copiar</button>
+          <button type="button" id="limpar">Limpar</button>
+        </div>
+      </div>
+    </main>
     <div id="background">
       <!-- <header>
         <div class="container">
@@ -22,7 +85,7 @@
         <h1 class="item">vogal.encryptor</h1>
       </header> -->
 
-      <main>
+      <!-- <main>
         <section class="flex-container">
           <div>
             <form>
@@ -87,7 +150,7 @@
             </div>
           </div>
         </section>
-      </main>
+      </main> -->
       <footer id="footer">
         autor: Ítalo Rissardi<br />
 
