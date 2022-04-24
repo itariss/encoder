@@ -1,10 +1,12 @@
-:root {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #444444;
+}
 
+:root {
   --primary-color: #e1f3ef;
   --secondary-color: #006466;
   --text-color: #4d194d;
@@ -27,7 +29,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 header img {
@@ -43,10 +45,11 @@ header h1 {
 
 main {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-around;
   min-height: 35rem;
+  padding: 2rem 0;
 }
 
 form {
