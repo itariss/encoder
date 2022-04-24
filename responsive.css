@@ -1,0 +1,38 @@
+@media screen and (max-width: 480px) {
+  header h1 {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  #text-encode {
+    height: 30vh;
+  }
+
+  #text-encode .warning {
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  #text-encode .buttons {
+    justify-content: center;
+  }
+
+  #text-decode {
+    padding-top: 2rem;
+  }
+
+  #text-decode img {
+    width: var(--gif-size);
+    height: var(--gif-size);
+    margin-bottom: 1rem;
+  }
+
+  #text-decode p {
+    margin: 0.5rem 0;
+  }
+}

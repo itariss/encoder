@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="icon/png" href="img/vogale4.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="icon/png" href="img/vogale4.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>vogal.encryptor</title>
-</head>
+  </head>
 
-<body>
-    <div id="background">
+  <body>
     <header>
-        <div class="container">
-            <img src="img/vogale4.png" alt="Logo" id="img">
-        </div>
-        <h1 class="item">vogal.encryptor</h1>            
+      <img src="img/vogale4.png" alt="Logo" title="vogal.encryptor" />
+      <h1>vogal.encryptor</h1>
     </header>
 
     <main>
+      <form id="text-encode">
+        <textarea
+          id="texto"
+          required
+          placeholder="Digite seu texto aqui"
+          autofocus="true"
+          autocomplete="off"
+          spellcheck="false"
+        ></textarea>
 
-    <section class="flex-container">
-        <div>
-            <form>
-                <textarea type="text" id="texto" required placeholder="Digite seu texto aqui" 
-                autofocus="true" autocomplete="off" spellcheck="false"></textarea>
+        <p class="warning">
+          <img src="img/alerta.png" alt="" />
+          Apenas letras minúsculas e sem acento.
+        </p>
 
-                <p class="aviso">apenas letras minúsculas e sem acento.</p>
+        <section class="buttons">
+          <button class="button-default" type="submit" id="encript">
+            Criptografar
+          </button>
+          <button class="button-secondary" type="submit" id="descript">
+            Descriptografar
+          </button>
+        </section>
+      </form>
 
-                <img src="img/alerta.png" id="alerta">   
+      <form id="text-decode">
+        <section id="information">
+          <img src="img/encryption-unscreen1.gif" alt="" />
+          <p>
+            <strong>Nenhuma mensagem<br />encontrada</strong>
+          </p>
+          <p class="dimmed">
+            Digite algo que gostaria<br />
+            de criptografar ou descriptografar
+          </p>
+        </section>
+        <textarea type="text" readonly required="text" id="texto2"></textarea>
+        <p hidden class="invalido">Nenhuma mensagem para ser copiada!</p>
+        <p hidden class="valido">"Sua mensagem foi copiada!"</p>
 
-                <div>
-                    
-                    <a href="#texto2">
-                        <button type="submit" id="encript" class="botoes">Criptografar
+        <section class="buttons">
+          <button class="button-primary" type="button" id="copiar">
+            Copiar
+          </button>
+          <button class="button-secondary" type="button" id="limpar">
+            Limpar
+          </button>
+        </section>
+      </form>
+    </main>
+    <footer>
+      autor: Ítalo Rissardi
 
-                        </button></a>
-
-                    <a href="#texto2">
-                    <button type="submit" id="descript"class="botoes">Descriptografar
-                    </button></a>
-
-                </div>
-            </form>
-        </div>
-        
-        <div>
-
-            <div class="flex">
-
-                <p class="nomsg"><strong>Nenhuma mensagem<br> encontrada</strong></p>
-                <p class="digite">Digite algo que gostaria<br> de criptografar ou descriptografar</p>
-
-            </div>
-
-            <img src="img/encryption-unscreen1.gif" id="gif">
-            <textarea type="text" readonly required="text" id="texto2" class="border"></textarea>
-            <p class="invalido">Nenhuma mensagem para ser copiada!</p>
-            <p class="valido">"Sua mensagem foi copiada!"</p>
-
-            <div>                
-                <button type="button" id="copiar">Copiar</button>
-                <button type="button" id="limpar">Limpar</button>
-            </div>
-        </div>
-    </section>
-    
-</main>
-<footer id="footer">autor: Ítalo Rissardi<br> 
-    
-    <div class="links">
-        
-        <a href="https://www.linkedin.com/in/%C3%ADtalo-rissardi-83340322a/">
-            <img src="img/linkedin.png">
+      <section class="social-media">
+        <a
+          class="link"
+          href="https://www.linkedin.com/in/%C3%ADtalo-rissardi-83340322a/"
+        >
+          <img src="img/linkedin.png" />
         </a>
-        
-        <a href="https://github.com/itariss/">
-            <img src="img/github.png">
-        </a>
-    </div>
-    
-</footer>
 
-</div>
-<script src="script.js"> </script>
-</body>
+        <a class="link" href="https://github.com/itariss/">
+          <img src="img/github.png" />
+        </a>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
