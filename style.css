@@ -8,11 +8,19 @@
 :root { 
     width: 100%;
     height:100%;
-    background: #E1F3EF;
+    --background-color: #E1F3EF;
+    --btn-color-one: #006466;
+    --btn-color-two: #4D194D;
 }
 
-header {
-    text-align: center;
+body {
+    background: var(--background-color);
+
+}
+
+#header {
+    width: 100%;
+    border-bottom: 0.15rem #006466 solid; 
 }
 
 #img {
@@ -27,7 +35,8 @@ header {
     width: 4.5rem; 
 }    
 
-.item {
+.title {
+    text-align: center;
     font-size: 1.4rem;
     padding: 2.5rem 5.2rem;
 }
@@ -41,18 +50,15 @@ header {
 
 #texto {
     font-size: 1rem;
-    color: #4D194D;
+    color: var(--btn-color-two);
     margin-top: 1.5rem;
     width: 18.6rem;
     height: 19.6rem;
-    background: #E1F3EF;
+    background: var(--background-color);
     resize: none;
     outline: none;  
     border: none;
-
-    
 }
-
 
 #texto2 {
     margin-top: 1.5rem;
@@ -62,21 +68,18 @@ header {
     resize: none;
     outline: none;
     border-radius: 0.5rem; 
-    border: 0.3rem solid #4D194D;  
+    border: 0.3rem solid var(--btn-color-two);  
+    box-shadow: 1rem 0.7rem 0.7rem rgba(0,0,0,0.19), 1rem 0.9rem 0.9rem rgba(0,0,0,0.23);
 }
 
 .background {
     font-size: 1rem;
     background-color: black;
-    color: #E1F3EF;
+    color: var(--background-color);
 }
 
 
-#alerta {
-    width: 0.7rem;
-}
-
-.aviso {
+.warning {
     color: darkgrey;
     position: relative;
     font-size: 0.7rem;
@@ -102,14 +105,13 @@ header {
     margin: -3rem;
 }
 
-
 .nomsg {
     position: relative;
     text-align: center;
 
 }
 
-.digite {
+.enter {
     position: relative;
     text-align: center;
     max-width: fit-content;
@@ -123,40 +125,52 @@ header {
     z-index: -1;
 }
 
-
-.botoes {
+.btn {
     width: 9.1rem;
-    height: 2.2rem;
+    height: 2.8rem;
     margin: 2.5rem 0;
     border-radius: 90px;
-
 }
 
 #encript {
-    background-color: #E1F3EF;
-    border-color: #4D194D;
-    color:#4D194D
+    background-color: var(--background-color);
+    border-color: var(--btn-color-two);
+    color: var(--btn-color-two);
+    box-shadow: 1rem 0.7rem 0.7rem rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
 
+#encript:hover {
+    background-color: var(--btn-color-two);
+    color: var(--background-color);
+    border-color: var(--background-color);
+    
 }
 
 #descript {
-    background-color: #006466;
-    color: #E1F3EF;
+    background-color: var(--btn-color-one);
+    color: var(--background-color);
+    border-color: white;
+    box-shadow: 1rem 0.7rem 0.7rem rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
 
+#descript:hover {
+    background-color: var(--background-color);
+    color: var(--btn-color-one);
+    border-color: var(--btn-color-one);
 }
 
 .invalido {
     font-size: small;
     text-align: center;
-    border: 0.12rem solid black;
     border-radius: 90px;
     width: fit-content;
     padding: 0.3rem;
-    background-color: coral;
+    background-color: var(--btn-color-two);
     margin: auto;
     opacity: 0;
-    color: white
-
+    color: white;
 }
 
 .valido {
@@ -164,31 +178,47 @@ header {
     font-size: small;
     text-align: center;
     bottom: 1.8rem;
-    border: 0.12rem solid black;
     border-radius: 1rem;
     width: fit-content;
     padding: 0.3rem;
-    background-color: royalblue;
+    background-color: var(--btn-color-one);
     margin: auto;
     opacity: 0;
     color: white
-
 }
 
 #copiar {
-    width: 4.1rem;
+    width: 6.1rem;
     height:2.2rem;
-    background-color: #4D194D;
-    color: #E1F3EF;
+    background-color: var(--btn-color-two);
+    color: var(--background-color);
+    border-color: white;
     border-radius: 20px; 
+    box-shadow: 1rem 0.7rem 0.7rem rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
+
+#copiar:hover{
+    background-color: var(--background-color);
+    border-color: var(--btn-color-two);
+    color: var(--btn-color-two);
 }
 
 #limpar {
-    width: 4.1rem;
+    width: 6.1rem;
     height:2.2rem;
-    background-color: #006466;
-    color: #E1F3EF;
+    background-color: var(--background-color);
+    color: var(--btn-color-one);
+    border-color: var(--btn-color-one);
     border-radius: 20px; 
+    box-shadow: 1rem 0.7rem 0.7rem rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
+
+#limpar:hover {
+    background-color: var(--btn-color-one);
+    color: var(--background-color);
+    border-color: var(--background-color);
 }
 
 #footer {
