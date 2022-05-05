@@ -68,7 +68,7 @@ document.querySelector("#descript").addEventListener("click", () => {
     if (texto.match(re)) {
         let novoTexto = texto.replace(/enter/g, "e");
         novoTexto = novoTexto.replace(/imes/g, "i");
-        novoTexto = novoTexto.replace(/alis/g, "a");
+        novoTexto = novoTexto.replace(/ai/g, "a");
         novoTexto = novoTexto.replace(/ober/g, "o");
         novoTexto = novoTexto.replace(/ufat/g, "u");
 
