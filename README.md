@@ -4,7 +4,7 @@
 
 #### :sparkler: Link:
 
-[Github Pages](https://itariss.github.io/one-challenge1/)
+[Github Pages](https://itariss.github.io/encoder/)
 
 #### :scroll: Descrição:
 
